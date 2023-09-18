@@ -4,9 +4,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Aakash on 12/15/2016.
- */
 public class SongPanel extends JPanel {
     private JLabel song;
     private JTextField enterSong;

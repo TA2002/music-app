@@ -4,9 +4,6 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 
-/**
- * Created by Aakash on 12/14/2016.
- */
 public class GUI extends JFrame {
 
     private SongPanel songPanel;
@@ -33,7 +30,7 @@ public class GUI extends JFrame {
         setSize(600, 1000);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        setLocationRelativeTo(null);//to make it centered
+        setLocationRelativeTo(null);
 
 
 

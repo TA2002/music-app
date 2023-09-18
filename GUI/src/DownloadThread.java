@@ -6,9 +6,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.HttpURLConnection;
 
-/**
- * Created by Aakash on 12/24/2016.
- */
 public class DownloadThread extends SwingWorker<Void, Void> {
 
     @Override
@@ -29,10 +26,8 @@ public class DownloadThread extends SwingWorker<Void, Void> {
             while ((x = in.read(data, 0, 1024)) >= 0) {
                 downloadedFileSize += x;
 
-                // calculate progress
                 final int currentProgress = (int) ((((double)downloadedFileSize) / ((double)completeFileSize)) * 100000d);
 
-                // update progress bar
                 SwingUtilities.invokeLater(new Runnable() {
 
                     @Override

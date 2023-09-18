@@ -4,9 +4,6 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Vector;
 
-/**
- * Created by Aakash on 12/15/2016.
- */
 public class SelectSong extends JPanel {
     private JLabel selectSong;
     static  JTable selectionTable;

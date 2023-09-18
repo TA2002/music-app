@@ -1,9 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * Created by Aakash on 12/15/2016.
- */
 public class TextAreaAndProgressBar extends JPanel {
 
     static private JTextArea output;
@@ -26,7 +23,6 @@ public class TextAreaAndProgressBar extends JPanel {
     }
     static void setLoading(){
 
-       // progressBar=new JProgressBar();
         progressBar.setIndeterminate(true);
         progressBar.setValue(0);
         progressBar.setStringPainted(true);

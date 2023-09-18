@@ -3,9 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Created by Aakash on 12/15/2016.
- */
 public class ChooseAndDownload extends JPanel{
     private JButton download;
     private JButton choose;
@@ -36,12 +33,12 @@ public class ChooseAndDownload extends JPanel{
             @Override
             public void actionPerformed(ActionEvent e) {
                 String a = (String) SelectSong.selectionTable.getValueAt(SelectSong.selectionTable.getSelectedRow(), SelectSong.selectionTable.getSelectedColumn());
-                //System.out.println(a);
+                
                 int index = SelectSong.selectionTable.getSelectedRow();
-                //System.out.println(index);
+
                 String link = ScrapeYouTube.links.get(index);
                 TextAreaAndProgressBar.addText("Downloading "+link+"...");
-                //ScrapeListenToYouTube.startScrape(link);
+
                 ScrapeListenToYouTubeThread ob = new ScrapeListenToYouTubeThread();
                 ob.setLink(link);
                 ob.execute();
